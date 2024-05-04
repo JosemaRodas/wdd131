@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +25,10 @@ nav {
   color: #fff;
 }
 
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
 h1 { 
     padding: 5px;
     color: steelblue;

@@ -7,13 +7,21 @@
   box-sizing: border-box;
 }
 
-nav { 
-    background-color: steelblue;
+.title { 
+    background-color: rgb(0, 81, 148);
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
  }
+
+ nav { 
+  background-color: rgb(84, 84, 84);
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 
  nav a {
@@ -29,11 +37,15 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
 h1 { 
     padding: 5px;
-    color: steelblue;
+    color: rgb(255, 255, 255);
 
 }
+
+
+
 
 header, footer, .grid {
   margin: 0 auto;
@@ -55,7 +67,7 @@ main {
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid steelblue;
+  border: 1px solid rgb(0, 0, 0);
   padding: 2px;
   box-shadow: 0 0 30px gray;
   float: right;
@@ -98,7 +110,6 @@ footer {
 
 
 
-/* Class Selectors */
 
 .box {
   margin: 1em;

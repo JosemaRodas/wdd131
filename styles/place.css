@@ -121,6 +121,7 @@ footer::after {
   align-items: center;
   min-height: 300px;
   gap: 1rem;
+
 }
 
 figure {
@@ -132,3 +133,12 @@ img {
   height: auto;
 }
 
+
+@media (min-width: 401px) {
+  .grid {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around; 
+    gap: 1rem; 
+  }
+}

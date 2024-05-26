@@ -11,26 +11,7 @@
     justify-content: space-between;
     padding: 1rem;
   }
-  
-.nav-list{
-    display: flex;
-    list-style-type: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
-    gap: 1rem;
-  }
 
-  
-  .nav-list li a{
-    text-decoration: none;
-    color: #fff;
-  }
-
-
-  .abrir-menu, .cerrar-menu{
-    display: none;
-  }
 
   @media screen and (max-width:750px) {
     .abrir-menu, .cerrar-menu{
@@ -108,7 +89,7 @@
 
 
 
-  footer {
+footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;

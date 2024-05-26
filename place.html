@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jose Manuel Rodas Villarroel - Week 2 homework with javascript">
     <meta name="author" content="Jose Manuel Rodas">
-    <title>Temple Album</title>
-    <script src="scripts/temples.js" defer></script>
-    <link rel="stylesheet" href="styles/temples.css">
+    <title>Paraguay</title>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,34 +16,52 @@
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1>
-        <button id= "abrir" class="abrir-menu"> <i class="bi bi-list"></i></button>
-            <nav id= "nav" class="nav">
-        <button id= "cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
-
+        <h1>Paraguay</h1>
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Old</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Large</a></li>
-                    <li><a href="#">Small</a></li>
+
                 </ul>
             </nav>
     </header>
 
     <main>
-        <h2 class="title">Home</h2>
         <div class="grid">       
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
-             <figure><img src="images/cochabamba_bolivia_temple_lds.jpeg" alt="" width="250"><figcaption>Cochabamba Temple</figcaption></figure>
+             <figure><img src="images/paraguay.webp" alt="" width="250"></figure>
+
          </div>
+
+         <div class="grid">       
+            <div class="info-box">
+                <h2 class="info-title">Paraguay Information</h2>
+                <ul class="info-list">
+                    <li><span>Area:</span> 587,041 sq km</li>
+                    <li><span>Population:</span> 6,861,523</li>
+                    <li><span>Capital:</span> asunción </li>
+                    <li><span>Languages:</span> Spanish, Guaranie</li>
+                    <li><span>Currency:</span> Guarani</li>
+                    <li><span>Time Zone:</span> UTC-4</li>
+                    <li><span>Calling Code:</span> +595</li>
+                    <li><span>Internet TLD:</span> .py</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="weather-box">
+                <div class="weather-info">
+                    <img src="images/weather.svg" alt="Weather Logo" class="weather-logo">
+                    <h2>Weather</h2>
+                    <p>Temperature: <span id="temperature">10°C</span></p>
+                    <p>Conditions: <span id="conditions">Partly Cloudy</span></p>
+                    <p>Wind: <span id="wind">5 km/h</span></p>
+                    <p>Wind Chill: <span id="wind-chill">9.8°C</span></p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+         
     </main>
     <footer>
         <p id="copyright"></p>

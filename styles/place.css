@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-family);
+  font-family: 'Times New Roman', Times, serif;
 }
 
 header {
@@ -27,14 +27,6 @@ header::after {
   width: 100%;
   height: 2px; 
   background-color: var(--accent-color);
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
 }
 
 
@@ -124,9 +116,11 @@ footer::after {
 
 .grid {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 300px;
+  gap: 1rem;
 }
 
 figure {
@@ -138,16 +132,3 @@ img {
   height: auto;
 }
 
-/* Mobile Image (Media Query) */
-@media (max-width: 400px) {
-  #deviceImage {
-    src: "images/paraguay-300.webp";
-  }
-}
-
-/* Desktop Image (Media Query) [Optional] */
-@media (min-width: 768px) {
-  #deviceImage {
-    src: "images/paraguay-800.webp";
-  }
-}

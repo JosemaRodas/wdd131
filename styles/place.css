@@ -1,8 +1,7 @@
 :root {
-  --primary-color: #000;  /* Base text color */
-  --secondary-color: #fff; /* Light color */
-  --accent-color: #FF0000; /* Red for emphasis */
-  --font-family: Roboto, Arial, Helvetica, sans-serif; /* Base font */
+  --primary-color: #000; 
+  --secondary-color: #fff; 
+  --accent-color: #FF0000; 
 }
 
 * {
@@ -37,20 +36,15 @@ main {
   padding: 1rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid layout */
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-}
+
 
 .info-box {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  width: auto; /* Responsive width based on grid */
+  width: 300px; 
+  text-align: center;
 }
 
 .info-title {
@@ -81,7 +75,9 @@ main {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  width: auto; /* Responsive width based on grid */
+  width: 300px; 
+  text-align: center;
+
 }
 
 .weather-logo {
@@ -120,7 +116,7 @@ footer {
 footer::after {
   display: block;
   width: 50px;
-  height: 2px; /* Decorative line at the center */
+  height: 2px; 
   background-color: var(--accent-color);
   margin: 0 auto;
 }

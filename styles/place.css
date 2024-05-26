@@ -122,14 +122,32 @@ footer::after {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 550px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile Image (Media Query) */
+@media (max-width: 400px) {
+  #deviceImage {
+    src: "images/paraguay-300.webp";
   }
 }
 
-@media screen and (min-width: 800px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Desktop Image (Media Query) [Optional] */
+@media (min-width: 768px) {
+  #deviceImage {
+    src: "images/paraguay-800.webp";
   }
 }

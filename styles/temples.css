@@ -111,3 +111,47 @@ footer {
   text-align: center;
 
 }
+
+
+
+
+section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para los elementos dentro de las tarjetas */
+section h3 {
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+section p {
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para las etiquetas de texto */
+.label {
+  font-weight: bold;
+}
+
+/* Estilos para la navegación cuando es visible */
+.nav.visible {
+  /* Tus estilos para la navegación visible */
+}

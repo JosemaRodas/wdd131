@@ -106,7 +106,7 @@ const temples = [
       dedicated: "1999, March, 19",
       area: 116642,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "https://es.411answers.com/uploads/12/12b2cb50049eb2dd09bcd8149cda3fcca9a8309b.jpg"
     },
   ];
 

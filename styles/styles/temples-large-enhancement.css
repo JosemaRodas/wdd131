@@ -1,4 +1,4 @@
-@media screen and (min-width: 550px){
+@media screen and (min-width: 560px){
     .grid{
         grid-template-columns: 1fr 1fr;
     }

@@ -1,7 +1,7 @@
 const nav = document.querySelector('#nav');
 const abrir = document.querySelector('#abrir');
 const cerrar = document.querySelector('#cerrar');
-const filterButtons = document.querySelectorAll('.nav-list a'); // Select all filter buttons
+const filterButtons = document.querySelectorAll('.nav-list a'); 
 
 abrir.addEventListener('click', () => {
   nav.classList.add("visible");
@@ -112,7 +112,7 @@ const temples = [
 
 function createTempleCard(filteredTemples) {
   const gridElement = document.querySelector(".grid");
-  gridElement.innerHTML = ""; // Clear existing temple cards
+  gridElement.innerHTML = ""; 
 
   filteredTemples.forEach(temple => {
     let card = document.createElement("section");
@@ -141,11 +141,11 @@ function createTempleCard(filteredTemples) {
   });
 }
 
-createTempleCard(temples); // Initial display of all temples
+createTempleCard(temples); 
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const filterType = button.textContent.trim().toLowerCase(); // Get the filter type from button text
+    const filterType = button.textContent.trim().toLowerCase(); 
     filterTemples(temples.filter(
       temple => {
         switch (filterType) {
@@ -158,7 +158,7 @@ filterButtons.forEach(button => {
           case "small":
             return temple.area < 10000;
           case "home":
-            return true; // Display all temples
+            return true; 
           default:
             console.error("Invalid filter type:", filterType);
             return false;
@@ -168,19 +168,13 @@ filterButtons.forEach(button => {
   });
 });
 
-
-// ... (El resto del código permanece igual)
-
 function filterTemples(filteredTemples) {
     createTempleCard(filteredTemples);
   }
   
-  // ... (El resto del código permanece igual)
-  
-  // Inicialización de los botones de filtro
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      const filterType = button.dataset.filter; // Usar data attributes para los tipos de filtro
+      const filterType = button.dataset.filter; 
       let filteredTemples = [];
       switch (filterType) {
         case "old":
@@ -196,7 +190,7 @@ function filterTemples(filteredTemples) {
           filteredTemples = temples.filter(temple => temple.area < 10000);
           break;
         case "home":
-          filteredTemples = temples; // Mostrar todos los templos
+          filteredTemples = temples; 
           break;
         default:
           console.error("Invalid filter type:", filterType);

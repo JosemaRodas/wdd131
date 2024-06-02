@@ -7,7 +7,7 @@
 header { 
   display: flex;
   align-items: center;
-  background-color: rgb(84, 84, 84);
+  background-color: #333; /* Oscuro */
   justify-content: space-between;
   padding: 1rem;
 }
@@ -17,16 +17,14 @@ header {
   list-style-type: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
+  color: #f2f2f2; /* Claro */
   gap: 1rem;
 }
 
-
 .nav-list li a{
   text-decoration: none;
-  color: #fff;
+  color: #f2f2f2; /* Claro */
 }
-
 
 .abrir-menu, .cerrar-menu{
   display: none;
@@ -49,14 +47,12 @@ header {
       top: 0;
       right: 0;
       bottom: 0;
-      background-color: rgb(159, 159, 159);
+      background-color: #4d4d4d; /* Gris medio */
       padding: 2rem;
       box-shadow: 0 0 100vmax rgba(0, 0, 0, .5);
       width: 200px;
       height: fit-content;
   }
-
-
 
   .nav.visible{
       opacity: 1;
@@ -69,16 +65,14 @@ header {
   }
 
   .nav-list li a{
-      color: #ecececec;
+      color: #f2f2f2; /* Claro */
   }
 
 }
 
 .nav-list li a:hover {
-  color: black;
+  color: #000; /* Negro para alto contraste al pasar el mouse */
 }
-
-
 
 main{
   display: flex;
@@ -87,7 +81,6 @@ main{
   align-items: center;
   padding: 1rem;
 }
-
 
 .title {
   text-align: center;
@@ -100,20 +93,17 @@ main{
   justify-content: center;
   text-align: center;
   gap: 1rem;
-
 }
 
-
-
 footer {
+  color: #ccc;
   margin-top: 1em;
   border-top: 1px solid #000;
   text-align: center;
-
+  background-color: #333; /* Oscuro */
+  justify-content: space-between;
+  padding: 1rem;
 }
-
-
-
 
 section {
   border: 1px solid #ccc;
@@ -127,10 +117,9 @@ section:hover {
   transform: translateY(-5px);
 }
 
-/* Estilos para los elementos dentro de las tarjetas */
 section h3 {
-  background-color: #f7f7f7;
-  color: #333;
+  background-color: #f7f7f7; /* Claro */
+  color: #333; /* Oscuro */
   padding: 10px;
   margin: 0;
   text-align: center;
@@ -146,12 +135,6 @@ section img {
   height: auto;
 }
 
-/* Estilos para las etiquetas de texto */
 .label {
   font-weight: bold;
-}
-
-/* Estilos para la navegación cuando es visible */
-.nav.visible {
-  /* Tus estilos para la navegación visible */
 }

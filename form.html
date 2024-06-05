@@ -4,9 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Review Form</title>
-  <!-- Add your CSS link here -->
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/temples.js" defer></script>
+  <script src="form.js"></script>
+
 </head>
 <body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id= "abrir" class="abrir-menu"> <i class="bi bi-list"></i></button>
+            <nav id= "nav" class="nav">
+        <button id= "cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+            </nav>
+    </header>
   <form method="get" action="review.html">
     <label for="product-name">Product Name:</label>
     <select id="product-name" name="product-name" required>
@@ -44,32 +54,9 @@
     <input type="submit" value="Post Review">
   </form>
 
-  <!-- Common footer content goes here -->
-
-  <script>
-    // Product Array
-    const products = [
-      { id: 'fc-1888', name: 'flux capacitor', 'avg-rating': 4.5 },
-      { id: 'fc-2050', name: 'power laces', 'averagerating': 4.7 },
-      { id: 'fs-1987', name: 'time circuits', 'averagerating': 3.5 },
-      { id: 'ac-2000', name: 'low voltage reactor', 'averagerating': 3.9 },
-      { id: 'jj-1969', name: 'warp equalizer', 'averagerating': 5.0 }
-    ];
-
-    // Populate product options
-    const selectElement = document.getElementById('product-name');
-    products.forEach(product => {
-      const option = document.createElement('option');
-      option.value = product.id;
-      option.textContent = product.name;
-      selectElement.appendChild(option);
-    });
-
-    // LocalStorage review counter
-    if (window.location.pathname.includes('review.html')) {
-      const reviewCount = localStorage.getItem('reviewCount') || 0;
-      localStorage.setItem('reviewCount', parseInt(reviewCount) + 1);
-    }
-  </script>
+  <footer>
+    <p id="copyright"></p>
+    <p id="last-modified"></p>
+</footer>
 </body>
 </html>

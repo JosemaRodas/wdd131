@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+header { 
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+
+form {
+  background-color: #d2cfcf;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button,
+input[type="submit"] {
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #3949ab;
+}
+
+/* Utility Classes */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  color: #ccc;
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
+  background-color: #333; 
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+  }
+}

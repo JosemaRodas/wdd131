@@ -6,6 +6,7 @@ copyrightElement.textContent = `Copyright © ${currentYear} 🌴 Jose Manuel Rod
 
 lastModifiedElement.textContent = `Document last modified: ${document.lastModified}`;
 
+
 const products = [
   { id: 'fc-1888', name: 'flux capacitor', 'avg-rating': 4.5 },
   { id: 'fc-2050', name: 'power laces', 'averagerating': 4.7 },
@@ -29,4 +30,10 @@ window.addEventListener('load', function() {
     const reviewCount = localStorage.getItem('reviewCount') || 0;
     localStorage.setItem('reviewCount', parseInt(reviewCount) + 1);
   }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const reviewCount = localStorage.getItem('reviewCount') || 0;
+  localStorage.setItem('reviewCount', parseInt(reviewCount) + 1);
+  document.getElementById('review-counter').textContent = 'Number of completed reviews: ' + localStorage.getItem('reviewCount');
 });
